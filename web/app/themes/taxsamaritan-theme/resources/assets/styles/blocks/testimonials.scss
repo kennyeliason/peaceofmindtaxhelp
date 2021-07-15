@@ -1,0 +1,16 @@
+.wp-block-testimonials {
+    column-count: 1;
+    @media (min-width: theme('screens.md')) {
+        column-count: 2;
+    }
+    .testimonial-body {
+        .quotes {
+            bottom: -1rem;
+            right: 1.5rem;
+        }
+        .arrow {
+            bottom: -1rem;
+            left: 5rem;
+        }
+    }
+}

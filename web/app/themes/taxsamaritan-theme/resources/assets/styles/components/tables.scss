@@ -1,0 +1,39 @@
+.wp-block-table.is-style-stripes {
+    @apply border-0;
+}
+
+table {
+    @apply border-collapse w-full table-auto;
+    thead {
+        @apply bg-gray-200;
+
+        th {
+            @apply w-full block relative p-3 text-xl font-bold uppercase text-black border border-gray-300;
+
+            @media (min-width: theme("screens.lg")) {
+                @apply w-auto p-3 table-cell static;
+            }
+        }
+    }
+    tbody {
+        tr {
+            @apply bg-white flex flex-row flex-wrap mb-10;
+
+            &:nth-child(even) {
+                @apply bg-gray-100;
+            }
+
+            @media (min-width: theme("screens.lg")) {
+                @apply table-row flex-no-wrap flex-row mb-0;
+            }
+
+            td {
+                @apply w-full text-gray-800 border border-b block relative;
+
+                @media (min-width: theme("screens.lg")) {
+                    @apply w-auto p-3 table-cell static;
+                }
+            }
+        }
+    }
+}

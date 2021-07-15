@@ -1,0 +1,21 @@
+.versus-block {
+    @apply border-white border-8 shadow-lg;
+
+    .versus-title {
+        @apply bg-trim-500 text-center text-2xl uppercase font-light font-heading py-2 border-b-8;
+    }
+
+    .versus-list {
+        @apply bg-brand-600 m-0 font-heading;
+        list-style: none;
+        li {
+            @apply py-2 border-b-2 border-brand-700 text-lg font-light tracking-wide;
+            border-bottom-width: 1px;
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+

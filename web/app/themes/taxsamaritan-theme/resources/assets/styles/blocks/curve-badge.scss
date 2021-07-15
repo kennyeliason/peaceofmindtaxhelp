@@ -1,0 +1,20 @@
+// Curve Badge Styling
+.wp-block-curve-badge {
+    &.above {
+        img {
+            margin-top: -4.5rem;
+        }
+    }
+    &.below {
+        img {
+            margin-bottom: -4.5rem;
+            z-index: 30;
+        }
+    }
+    img {
+        left: 32%;
+        @media (min-width: theme('screens.md')) {
+            left: 41%;
+        }
+    }
+}

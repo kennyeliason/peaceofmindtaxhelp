@@ -1,0 +1,9 @@
+.wp-block-subpages {
+    ul {
+        font-size: 0;
+        @apply max-w-full;
+        li {
+            @apply text-lg;
+        }
+    }
+}

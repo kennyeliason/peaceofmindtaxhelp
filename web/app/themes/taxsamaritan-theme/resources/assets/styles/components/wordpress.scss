@@ -1,0 +1,79 @@
+@import "tailwind";
+
+.wp-block-cover-image.has-background-dim, .wp-block-cover.has-background-dim {
+  background-color: transparent;
+}
+
+@each $name, $color in $colors {
+  .has-#{$name}-color {
+    color: $color;
+  }
+
+  .has-#{$name}-background-color {
+    background-color: $color !important;
+  }
+
+  .has-#{$name}-background-color.has-#{$name}-color {
+    border-color: $color;
+  }
+}
+
+@each $name, $size in $fontSizeWP {
+  .has-#{$name}-font-size {
+    font-size: $size;
+  }
+}
+
+.has-text-align-right {
+  text-align: right;
+}
+.has-text-align-center {
+  text-align: center;
+}
+.has-text-align-left {
+  text-align: left;
+}
+
+// Leave the media on top for mobile stacking purposes
+@media (max-width: 600px) {
+  .wp-block-media-text.is-stacked-on-mobile.has-media-on-the-right {
+    .wp-block-media-text__content {
+      grid-row: 2;
+    }
+
+    .wp-block-media-text__media {
+      grid-row: 1;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .wp-block-media-text.is-stacked-on-mobile {
+    grid-template-columns: 100% !important;
+  }
+}
+
+.wp-block-cover {
+  min-height: auto;
+  .wp-block-cover__inner-container {
+    width: calc(100% - 20px);
+  }
+}
+
+@import "../blocks/button";
+
+.wp-block-group {
+  @apply py-4;
+}
+
+.highlight-gray {
+  @apply border border-gray-500 bg-gray-300 text-gray-800 rounded p-8 font-thin;
+}
+
+.textwidget p {
+  @apply text-white;
+}
+
+iframe {
+  @apply max-w-full;
+}

@@ -1,0 +1,59 @@
+@mixin on-circle($item-count, $circle-height, $circle-width, $item-height, $item-width) {
+  position: relative;
+  width:  $circle-width;
+  height: $circle-height;
+  padding: 0;
+  border-radius: 50%;
+  list-style: none;
+
+  > * {
+    display: block;
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    width:  $item-width;
+    height: $item-height;
+
+    $angle: (360 / $item-count);
+    $rot: 0;
+
+    @for $i from 1 through $item-count {
+      &:nth-of-type(#{$i}) {
+        transform:
+        rotate($rot * 1deg)
+        translate($circle-width / 2)
+        rotate($rot * -1deg);
+      }
+
+      $rot: $rot + $angle;
+    }
+  }
+}
+
+.bubbles-ul {
+  @apply w-full mx-auto mb-4 px-4;
+  li {
+    list-style: none;
+
+    .bubble-img {
+      // @apply w-1/3;
+    }
+    .bubble-text {
+      // @apply w-2/3;
+    }
+  }
+  @media (min-width: theme('screens.md')) {
+    @include on-circle($item-count: 5, $circle-height: 30em, $circle-width: 30em, $item-height: 8em, $item-width: 13em);
+    @apply mb-32 mt-16;
+    border: dashed 1px #DBDBDB;
+    li {
+      @apply -mt-12 -ml-24 text-center;
+      .bubble-img {
+        transition: all .5s ease;
+        &:hover {
+          transform: scale(1.1,1.1);
+        }
+      }
+    }
+  }
+}

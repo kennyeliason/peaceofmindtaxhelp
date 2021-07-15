@@ -1,0 +1,16 @@
+// Curve Block Styling
+.wp-block-curve,
+.footer-curve {
+    @media (min-width: theme('screens.md')) {
+        height: 4.65rem;
+    }
+}
+.curve {
+    border-radius: 50%;
+    width: 130%;
+    left: -15%;
+    @media (min-width: theme('screens.md')) {
+        width: 110%;
+        left: -5%;
+    }
+}

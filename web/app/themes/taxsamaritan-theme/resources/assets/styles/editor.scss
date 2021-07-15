@@ -1,0 +1,10 @@
+/**
+ * Editor
+ */
+
+.editor-styles-wrapper > * {
+  [example-block] {
+    @import 'blocks/button';
+    @import 'blocks/curve';
+  }
+}

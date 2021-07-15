@@ -1,0 +1,17 @@
+aside.sidebar {
+    section {
+        > * {
+            @apply p-4;
+        }
+        &.widget_categories ul,
+        ul.wpp-list {
+            @apply list-none pl-0 pt-0;
+            li {
+                @apply mr-6 inline-block text-sm;
+                &.current-cat a {
+                    @apply font-bold underline;
+                }
+            }
+        }
+    }
+}

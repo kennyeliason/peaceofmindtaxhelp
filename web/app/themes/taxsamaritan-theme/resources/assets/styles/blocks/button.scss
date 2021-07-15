@@ -1,0 +1,41 @@
+/**
+ * Button
+ */
+
+@import "../components/tailwind";
+
+.wp-block-button__link {
+  @apply transition duration-200 ease-in-out transform uppercase font-heading font-thin rounded-none px-5 py-2;
+  @screen lg {
+    @apply py-2;
+  }
+  &:hover {
+    @apply no-underline scale-105 -translate-y-1;
+  }
+
+  @each $name, $color in $colors {
+    &.has-#{$name}-color {
+      color: $color;
+    }
+
+    &.has-#{$name}-background-color {
+      background-color: $color;
+      border: 2px solid $color;
+    }
+  }
+}
+
+.wp-block-button:not(.is-style-full) > .wp-block-button__link {
+  @apply w-auto;
+}
+
+.wp-block-button.is-style-outline {
+  .wp-block-button__link {
+    @each $name, $color in $colors {
+      &.has-background.has-#{$name}-background-color {
+        background-color: transparent;
+        border: 3px solid $color;
+      }
+    }
+  }
+}

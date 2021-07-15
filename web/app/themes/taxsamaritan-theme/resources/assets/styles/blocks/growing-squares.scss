@@ -1,0 +1,11 @@
+.wp-block-growing-squares {
+    .growing-square {
+        cursor: pointer;
+        transition: all .25s ease;
+        &:hover {
+            border-radius: 1rem;
+            border-right: theme('colors.trim.500') 0.25rem solid;
+            border-bottom: theme('colors.trim.500') 0.25rem solid;
+        }
+    }
+}

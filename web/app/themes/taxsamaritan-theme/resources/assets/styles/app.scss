@@ -1,0 +1,293 @@
+@import "~animate.css";
+
+/**
+* This injects Tailwind's base styles, which is a combination of
+* Normalize.css and some additional base styles.
+*
+* You can see the styles here:
+* https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
+*
+* If using `postcss-import`, use this import instead:
+*
+* @import "tailwindcss/preflight";
+*/
+@tailwind base;
+
+@import "./components/neon-normalize";
+
+/**
+* This injects any component classes registered by plugins.
+*
+* If using `postcss-import`, use this import instead:
+*
+* @import "tailwindcss/components";
+*/
+@tailwind components;
+
+/**
+* Here you would add any of your custom component classes; stuff that you'd
+* want loaded *before* the utilities so that the utilities could still
+* override them.
+*
+* Example:
+*
+* .btn { ... }
+* .form-input { ... }
+*
+* Or if using a preprocessor or `postcss-import`:
+*
+* @import "components/buttons";
+* @import "components/forms";
+*/
+
+/**
+* This injects all of Tailwind's utility classes, generated based on your
+* config file.
+*
+* If using `postcss-import`, use this import instead:
+*
+* @import "tailwindcss/utilities";
+*/
+@tailwind utilities;
+
+/**
+* Here you would add any custom utilities you need that don't come out of the
+* box with Tailwind.
+*
+* Example :
+*
+* .bg-pattern-graph-paper { ... }
+* .skew-45 { ... }
+*
+* Or if using a preprocessor or `postcss-import`:
+*
+* @import "utilities/background-patterns";
+* @import "utilities/skew-transforms";
+*/
+/* latin */
+/*
+Get font faces from https://fonts.googleapis.com/css?family=Open+Sans
+Replace url with local font exampe:
+src: url("../fonts/Montserrat-Medium.ttf");
+*/
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Oswald-Regular.ttf') format('ttf');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Oswald-Regular.ttf') format('ttf');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Oswald-Regular.ttf') format('ttf');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Oswald-Regular.ttf') format('ttf');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Oswald-Regular.ttf') format('ttf');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: src('../fonts/Roboto-Regular.ttf'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu72xKKTU1Kvnz.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: src('../fonts/Roboto-Regular.ttf'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu5mxKKTU1Kvnz.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: src('../fonts/Roboto-Regular.ttf'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7mxKKTU1Kvnz.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: src('../fonts/Roboto-Regular.ttf'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4WxKKTU1Kvnz.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: src('../fonts/Roboto-Regular.ttf'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7WxKKTU1Kvnz.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: src('../fonts/Roboto-Regular.ttf'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7GxKKTU1Kvnz.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: src('../fonts/Roboto-Regular.ttf'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+[x-cloak] {
+    display: none;
+}
+
+@import "./components/wordpress";
+@import "./components/gravityforms";
+@import "./components/sidebar";
+@import "./components/tables";
+@import "./blocks/button";
+@import "./blocks/curve";
+@import "./blocks/curve-badge";
+@import "./blocks/squares";
+@import "./blocks/jumbo-curve";
+@import "./blocks/feature-pages";
+@import "./blocks/benefit-bubbles";
+@import "./blocks/growing-squares";
+@import "./blocks/logo-colors";
+@import "./blocks/versus";
+@import "./blocks/video-testimonials";
+@import "./blocks/testimonials";
+@import "./blocks/steps";
+@import "./blocks/subpages";
+
+footer {
+    .widget {
+        @apply mb-4;
+    }
+    p {
+        @apply px-0;
+    }
+    section .menu {
+        @apply grid grid-cols-1 gap-1 list-none pl-0 text-white;
+        li {
+            @apply uppercase font-heading pb-0;
+        }
+    }
+}
+
+.custom-logo {
+    @apply h-16 py-2 w-auto object-contain;
+    @screen xl {
+        @apply h-24;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply font-heading;
+}
+
+ul.checked {
+    @apply pl-0 mb-0 pb-4;
+    li {
+        @apply list-none bg-gray-300 border border-gray-600 text-gray-800 rounded p-4 my-4 relative pl-12;
+        &:before {
+            @apply pr-4 block h-full float-left absolute;
+            margin-left: -2.25rem;
+            content:url('../images/check.svg');
+        }
+    }
+}
+
+.has-background ul.checked {
+    li {
+        @apply bg-white;
+    }
+}
+
+footer {
+    .widget_nav_menu {
+        ul {
+            list-style: none;
+            @apply ml-5;
+        }
+        ul li {
+            position: relative;
+            padding-bottom: 10px;
+            &:before{
+                content: '';
+                position: absolute;
+                border-right:2px solid white;
+                border-bottom:2px solid white;
+                width:8px;
+                height:8px;
+                top: calc(50% - 5px);
+                left: -20px;
+                transform: translateY(-50%) rotate(-45deg);
+            }
+        }
+    }
+}
+
+.home .wp-block-yoast-seo-local-address .wpseo-location {
+    @apply grid grid-cols-1 px-4;
+
+    @media (min-width: theme('screens.lg')) {
+        @apply grid-cols-2;
+    }
+    .wpseo-phone, .wpseo-fax, .wpseo-email {
+        @apply order-1 text-brand-600 text-lg uppercase font-bold pb-8;
+        a, .tel {
+            @apply text-gray-900 text-xl font-normal font-heading block w-full;
+        }
+    }
+}
+
+#breadcrumbs {
+    a {
+        @apply text-brand-500;
+    }
+}
+
+.entry-share-btns a {
+    @apply bg-brand-600 text-white #{!important};
+    &:hover, &:focus {
+        @apply bg-trim-600 no-underline #{!important};
+    }
+}

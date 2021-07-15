@@ -1,0 +1,31 @@
+.wp-block-jumbo-curve .curved {
+    @apply h-32;
+    background-position: center;
+    background-size: auto 100vh;
+    min-height: 25rem;
+    width: 150%;
+    max-width: 5000px;
+    left: -25%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    @media (min-width: theme('screens.md')) {
+        width: 130%;
+        left: -15%;
+    }
+}
+@screen md {
+    .wp-block-jumbo-curve .curved {
+        @apply h-56;
+        min-height: 35rem;
+    }
+}
+
+.jumbo-text h1 {
+    @apply text-2xl;
+}
+
+@screen md {
+    .jumbo-text h1 {
+        @apply text-5xl;
+    }
+}

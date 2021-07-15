@@ -1,0 +1,29 @@
+.wp-block-steps {
+    @apply mt-0;
+    .single-step {
+        &:nth-child(odd) {
+            .icon-text {
+                @apply left-0 top-0;
+            }
+            .text {
+                @apply float-right;
+            }
+        }
+        &:nth-child(even) {
+            .icon-text {
+                @apply right-0 top-0;
+                .icon {
+                    @apply order-last;
+                }
+            }
+            .text {
+                @apply float-left;
+            }
+        }
+        .text {
+            p {
+                max-width: 100%;
+            }
+        }
+    }
+}

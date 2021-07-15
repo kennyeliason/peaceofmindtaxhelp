@@ -1,0 +1,21 @@
+.video {
+    @apply border-4 border-brand-400;
+    iframe {
+        @apply w-full;
+    }
+}
+
+.flags {
+    .flags-inner {
+        white-space: nowrap;
+        .flag {
+            @apply inline-block cursor-pointer;
+        }
+    }
+}
+
+.view-all-testimonials {
+    a {
+        @apply bg-trim-500 text-white py-4 px-8 uppercase font-heading text-xl;
+    }
+}
