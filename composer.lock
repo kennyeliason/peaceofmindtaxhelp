@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c8a5233a01ed8c2e1d6be92b70f719e8",
+    "content-hash": "ac0281b3114297945d4ec791bad8ced9",
     "packages": [
         {
             "name": "composer/installers",
@@ -136,6 +136,10 @@
                 "zend",
                 "zikula"
             ],
+            "support": {
+                "issues": "https://github.com/composer/installers/issues",
+                "source": "https://github.com/composer/installers/tree/v1.11.0"
+            },
             "funding": [
                 {
                     "url": "https://packagist.com",
@@ -154,26 +158,26 @@
         },
         {
             "name": "doctrine/inflector",
-            "version": "2.0.3",
+            "version": "1.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/inflector.git",
-                "reference": "9cf661f4eb38f7c881cac67c75ea9b00bf97b210"
+                "reference": "4bd5c1cdfcd00e9e2d8c484f79150f67e5d355d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/inflector/zipball/9cf661f4eb38f7c881cac67c75ea9b00bf97b210",
-                "reference": "9cf661f4eb38f7c881cac67c75ea9b00bf97b210",
+                "url": "https://api.github.com/repos/doctrine/inflector/zipball/4bd5c1cdfcd00e9e2d8c484f79150f67e5d355d9",
+                "reference": "4bd5c1cdfcd00e9e2d8c484f79150f67e5d355d9",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2 || ^8.0"
+                "php": "^7.1 || ^8.0"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^7.0",
-                "phpstan/phpstan": "^0.11",
-                "phpstan/phpstan-phpunit": "^0.11",
-                "phpstan/phpstan-strict-rules": "^0.11",
+                "doctrine/coding-standard": "^8.0",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-phpunit": "^0.12",
+                "phpstan/phpstan-strict-rules": "^0.12",
                 "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0"
             },
             "type": "library",
@@ -184,6 +188,7 @@
             },
             "autoload": {
                 "psr-4": {
+                    "Doctrine\\Common\\Inflector\\": "lib/Doctrine/Common/Inflector",
                     "Doctrine\\Inflector\\": "lib/Doctrine/Inflector"
                 }
             },
@@ -229,7 +234,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/inflector/issues",
-                "source": "https://github.com/doctrine/inflector/tree/2.0.x"
+                "source": "https://github.com/doctrine/inflector/tree/1.4.4"
             },
             "funding": [
                 {
@@ -245,7 +250,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-29T15:13:26+00:00"
+            "time": "2021-04-16T17:34:40+00:00"
         },
         {
             "name": "graham-campbell/result-type",
@@ -297,6 +302,10 @@
                 "Result-Type",
                 "result"
             ],
+            "support": {
+                "issues": "https://github.com/GrahamCampbell/Result-Type/issues",
+                "source": "https://github.com/GrahamCampbell/Result-Type/tree/v1.0.1"
+            },
             "funding": [
                 {
                     "url": "https://github.com/GrahamCampbell",
@@ -346,6 +355,63 @@
             },
             "description": "Load the Core Functionality plugin",
             "homepage": "https://mainwp.neonbrand.com/"
+        },
+        {
+            "name": "neonbrand/easyazon-pro",
+            "version": "4.0.11",
+            "dist": {
+                "type": "zip",
+                "url": "https://mainwp.neonbrand.com/satispress/easyazon-pro/4.0.11",
+                "shasum": "7225466501cbdc88690f1e22101c09988310860d"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": {
+                "name": "BoostWP",
+                "homepage": "http://boostwp.com/"
+            },
+            "description": "Quickly and easily insert Amazon affiliate links into your site's content. By installing this plugin, you agree to the <a href=\"http://easyazon.com/terms/\" target=\"_blank\">EasyAzon terms of service</a>.",
+            "homepage": "http://boostwp.com/products/easyazon-pro/"
+        },
+        {
+            "name": "neonbrand/easyzon-tag-replacer",
+            "version": "0.0.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://mainwp.neonbrand.com/satispress/easyzon-tag-replacer/0.0.2",
+                "shasum": "69fb0503ec01bca7ed2aa10d6747cbd4a7f901c0"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": {
+                "name": "Dean Robinson",
+                "homepage": "http://www.apinaservices.com"
+            },
+            "description": "Checks posts for existing Easy Amazon tags and replaces them.",
+            "homepage": "http://www.apinaservices.com"
+        },
+        {
+            "name": "neonbrand/elementor-pro",
+            "version": "3.2.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://mainwp.neonbrand.com/satispress/elementor-pro/3.2.0",
+                "shasum": "b18e7b1d06b849b3795d0994135eaa0ee5d388f2"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": {
+                "name": "Elementor.com",
+                "homepage": "https://elementor.com/"
+            },
+            "description": "Elementor Pro brings a whole new design experience to WordPress. Customize your entire theme: header, footer, single post, archive and 404 page, all with one page builder.",
+            "homepage": "https://elementor.com/"
         },
         {
             "name": "neonbrand/google-analytics-premium",
@@ -405,12 +471,50 @@
             "homepage": "https://gravityforms.com"
         },
         {
-            "name": "neonbrand/ithemes-security-pro",
-            "version": "7.0.1",
+            "name": "neonbrand/gravityformszapier",
+            "version": "4.1",
             "dist": {
                 "type": "zip",
-                "url": "https://mainwp.neonbrand.com/satispress/ithemes-security-pro/7.0.1",
-                "shasum": "7d31b33e2071634629ca241e0eafec095652873e"
+                "url": "https://mainwp.neonbrand.com/satispress/gravityformszapier/4.1",
+                "shasum": "daa289978946ec86b8f41bd5711a012c969c932f"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": {
+                "name": "Gravity Forms",
+                "homepage": "https://gravityforms.com"
+            },
+            "description": "Integrates Gravity Forms with Zapier, allowing form submissions to be automatically sent to your configured Zaps.",
+            "homepage": "https://gravityforms.com"
+        },
+        {
+            "name": "neonbrand/gravityformszohocrm",
+            "version": "2.5.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://mainwp.neonbrand.com/satispress/gravityformszohocrm/2.5.2",
+                "shasum": "181dfb414a04ce750bebf55afbc817b4d0c5c360"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": {
+                "name": "Gravity Forms",
+                "homepage": "https://gravityforms.com"
+            },
+            "description": "Integrates Gravity Forms with Zoho CRM, allowing form submissions to be automatically sent to your Zoho CRM account.",
+            "homepage": "https://gravityforms.com"
+        },
+        {
+            "name": "neonbrand/ithemes-security-pro",
+            "version": "6.8.5",
+            "dist": {
+                "type": "zip",
+                "url": "https://mainwp.neonbrand.com/satispress/ithemes-security-pro/6.8.5",
+                "shasum": "8ea0312c42082a0917999ef006c5b5f894896233"
             },
             "require": {
                 "composer/installers": "^1.0"
@@ -441,6 +545,25 @@
             },
             "description": "Renames your media files for better SEO and a nicer filesystem (automatically or manually).",
             "homepage": "https://meowapps.com"
+        },
+        {
+            "name": "neonbrand/monsterinsights-ads",
+            "version": "1.1.3",
+            "dist": {
+                "type": "zip",
+                "url": "https://mainwp.neonbrand.com/satispress/monsterinsights-ads/1.1.3",
+                "shasum": "f1569f0047d8151e785e518292b92df6d0cf5ae5"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": {
+                "name": "MonsterInsights Team",
+                "homepage": "https://www.monsterinsights.com"
+            },
+            "description": "Adds ad tracking options to MonsterInsights",
+            "homepage": "https://www.monsterinsights.com"
         },
         {
             "name": "neonbrand/monsterinsights-dimensions",
@@ -481,6 +604,25 @@
             "homepage": "https://www.monsterinsights.com"
         },
         {
+            "name": "neonbrand/monsterinsights-google-optimize",
+            "version": "1.3.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://mainwp.neonbrand.com/satispress/monsterinsights-google-optimize/1.3.2",
+                "shasum": "6c3d58936f9bfdc0563f4683fd7581a6d1322527"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": {
+                "name": "MonsterInsights Team",
+                "homepage": "https://www.monsterinsights.com"
+            },
+            "description": "Integrates Google Optimize with MonsterInsights",
+            "homepage": "https://www.monsterinsights.com"
+        },
+        {
             "name": "neonbrand/monsterinsights-page-insights",
             "version": "1.3.3",
             "dist": {
@@ -500,23 +642,137 @@
             "homepage": "https://www.monsterinsights.com"
         },
         {
-            "name": "neonbrand/searchwp",
-            "version": "4.1.21",
+            "name": "neonbrand/monsterinsights-performance",
+            "version": "1.4.2",
             "dist": {
                 "type": "zip",
-                "url": "https://mainwp.neonbrand.com/satispress/searchwp/4.1.21",
-                "shasum": "d578c2ddbc2e28e1a51291a0240ac04faacc9bd9"
+                "url": "https://mainwp.neonbrand.com/satispress/monsterinsights-performance/1.4.2",
+                "shasum": "e1d29836212ad80b1316ec5fe9a5a5c1af84201f"
             },
             "require": {
                 "composer/installers": "^1.0"
             },
             "type": "wordpress-plugin",
             "authors": {
-                "name": "SearchWP",
-                "homepage": "https://searchwp.com/"
+                "name": "MonsterInsights Team",
+                "homepage": "https://www.monsterinsights.com"
             },
-            "description": "The best WordPress search you can find",
-            "homepage": "https://searchwp.com/"
+            "description": "Adds performance tracking options to MonsterInsights",
+            "homepage": "https://www.monsterinsights.com"
+        },
+        {
+            "name": "neonbrand/nxs-snap-pro-upgrade",
+            "version": "1.5.10",
+            "dist": {
+                "type": "zip",
+                "url": "https://mainwp.neonbrand.com/satispress/nxs-snap-pro-upgrade/1.5.10",
+                "shasum": "8cbd7169b37608f96d1e052868d7d698bdf1a27b"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": {
+                "name": "NextScripts",
+                "homepage": "http://www.nextscripts.com"
+            },
+            "description": "Upgrade/Addon only. NextScripts: Social Networks Auto-Poster Plugin is required. Please do not remove it. This is not a replacement, just upgrade/addon.",
+            "homepage": "http://www.nextscripts.com/social-networks-auto-poster-for-wordpress"
+        },
+        {
+            "name": "neonbrand/optinmonster",
+            "version": "2.4.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://mainwp.neonbrand.com/satispress/optinmonster/2.4.1",
+                "shasum": "f14439540492a36da3ec0a0667c32e2b29425beb"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": {
+                "name": "OptinMonster Team",
+                "homepage": "https://optinmonster.com"
+            },
+            "description": "OptinMonster is the best WordPress popup plugin that helps you grow your email list and sales with email popups, exit intent popups, floating bars and more!",
+            "homepage": "https://optinmonster.com"
+        },
+        {
+            "name": "neonbrand/relevanssi-premium",
+            "version": "2.15.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://mainwp.neonbrand.com/satispress/relevanssi-premium/2.15.2",
+                "shasum": "7f157640f056e6335e7ef3552aae3da5f97b2d57"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": {
+                "name": "Mikko Saari",
+                "homepage": "http://www.mikkosaari.fi/"
+            },
+            "description": "This premium plugin replaces WordPress search with a relevance-sorting search.",
+            "homepage": "https://www.relevanssi.com/"
+        },
+        {
+            "name": "neonbrand/rocket-specify-image-dimensions",
+            "version": "1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://mainwp.neonbrand.com/satispress/rocket-specify-image-dimensions/1.0",
+                "shasum": "f35aca5a13fc04d267fa7c9b399e0114b9f5d097"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": {
+                "name": "WPRocket",
+                "homepage": "http://google.com"
+            },
+            "description": "Enable hidden wprocket feature to specify image dimensions",
+            "homepage": "http://google.com"
+        },
+        {
+            "name": "neonbrand/roots-share-buttons",
+            "version": "1.2.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://mainwp.neonbrand.com/satispress/roots-share-buttons/1.2.0",
+                "shasum": "2c319ab9be0e5afbb02eec672e9d0e1db444fa2b"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": {
+                "name": "Ben Word",
+                "homepage": "https://roots.io/"
+            },
+            "description": "Lightweight social sharing buttons",
+            "homepage": "https://roots.io/plugins/share-buttons/"
+        },
+        {
+            "name": "neonbrand/simple-sitemap-pro",
+            "version": "3.5.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://mainwp.neonbrand.com/satispress/simple-sitemap-pro/3.5.2",
+                "shasum": "1cfa26daa862fa6c66b3210a227a03a7cb4575a0"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": {
+                "name": "David Gwyer",
+                "homepage": "http://www.wpgoplugins.com"
+            },
+            "description": "HTML sitemap to display content as a single linked list of posts, pages, or custom post types. You can even display posts in groups sorted by taxonomy!",
+            "homepage": "http://wordpress.org/plugins/simple-sitemap/"
         },
         {
             "name": "neonbrand/wordpress-seo-premium",
@@ -555,6 +811,44 @@
             },
             "description": "The best WordPress performance plugin.",
             "homepage": "https://wp-rocket.me"
+        },
+        {
+            "name": "neonbrand/wpseo-local",
+            "version": "13.9",
+            "dist": {
+                "type": "zip",
+                "url": "https://mainwp.neonbrand.com/satispress/wpseo-local/13.9",
+                "shasum": "0ddce401739b5ebc15081f82bfd0237d1dc53289"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": {
+                "name": "Team Yoast and Arjan Snaterse",
+                "homepage": "https://yoast.com"
+            },
+            "description": "This Local SEO module adds all the needed functionality to get your site ready for Local Search Optimization",
+            "homepage": "https://yoast.com/wordpress/local-seo/"
+        },
+        {
+            "name": "neonbrand/wpseo-news",
+            "version": "12.8",
+            "dist": {
+                "type": "zip",
+                "url": "https://mainwp.neonbrand.com/satispress/wpseo-news/12.8",
+                "shasum": "d83acd811a5a3a4222799cf5704a9ab9c1782c7d"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": {
+                "name": "Team Yoast",
+                "homepage": "https://yoast.com/"
+            },
+            "description": "Google News plugin for the Yoast SEO plugin",
+            "homepage": "https://yoast.com/wordpress/plugins/news-seo/#utm_source=wpadmin&utm_medium=plugin&utm_campaign=wpseonewsplugin"
         },
         {
             "name": "oscarotero/env",
@@ -604,6 +898,11 @@
             "keywords": [
                 "env"
             ],
+            "support": {
+                "email": "oom@oscarotero.com",
+                "issues": "https://github.com/oscarotero/env/issues",
+                "source": "https://github.com/oscarotero/env/tree/v2.1.0"
+            },
             "time": "2020-06-11T10:59:27+00:00"
         },
         {
@@ -659,6 +958,10 @@
                 "php",
                 "type"
             ],
+            "support": {
+                "issues": "https://github.com/schmittjoh/php-option/issues",
+                "source": "https://github.com/schmittjoh/php-option/tree/1.7.5"
+            },
             "funding": [
                 {
                     "url": "https://github.com/GrahamCampbell",
@@ -756,75 +1059,6 @@
                 "source": "https://github.com/PrimeTimeCode/wp-plugin-control/tree/master"
             },
             "time": "2015-05-08T15:48:22+00:00"
-        },
-        {
-            "name": "roots/bedrock-autoloader",
-            "version": "1.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/roots/bedrock-autoloader.git",
-                "reference": "f508348a3365ab5ce7e045f5fd4ee9f0a30dd70f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/roots/bedrock-autoloader/zipball/f508348a3365ab5ce7e045f5fd4ee9f0a30dd70f",
-                "reference": "f508348a3365ab5ce7e045f5fd4ee9f0a30dd70f",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1"
-            },
-            "require-dev": {
-                "10up/wp_mock": "^0.4.2",
-                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Roots\\Bedrock\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nick Fox",
-                    "email": "nick@foxaii.com",
-                    "homepage": "https://github.com/foxaii"
-                },
-                {
-                    "name": "Scott Walkinshaw",
-                    "email": "scott.walkinshaw@gmail.com",
-                    "homepage": "https://github.com/swalkinshaw"
-                },
-                {
-                    "name": "Austin Pray",
-                    "email": "austin@austinpray.com",
-                    "homepage": "https://github.com/austinpray"
-                }
-            ],
-            "description": "An autoloader that enables standard plugins to be required just like must-use plugins",
-            "keywords": [
-                "autoloader",
-                "bedrock",
-                "mu-plugin",
-                "must-use",
-                "plugin",
-                "wordpress"
-            ],
-            "funding": [
-                {
-                    "url": "https://github.com/roots",
-                    "type": "github"
-                },
-                {
-                    "url": "https://www.patreon.com/rootsdev",
-                    "type": "patreon"
-                }
-            ],
-            "time": "2020-12-04T15:59:12+00:00"
         },
         {
             "name": "roots/soil",
@@ -1013,6 +1247,10 @@
             "keywords": [
                 "wordpress"
             ],
+            "support": {
+                "issues": "https://github.com/roots/wordpress-core-installer/issues",
+                "source": "https://github.com/roots/wordpress-core-installer/tree/master"
+            },
             "funding": [
                 {
                     "url": "https://github.com/roots",
@@ -1065,6 +1303,10 @@
                 }
             ],
             "description": "Collect configuration values and safely define() them",
+            "support": {
+                "issues": "https://github.com/roots/wp-config/issues",
+                "source": "https://github.com/roots/wp-config/tree/master"
+            },
             "time": "2018-08-10T14:18:38+00:00"
         },
         {
@@ -1122,6 +1364,11 @@
             "keywords": [
                 "wordpress wp bcrypt password"
             ],
+            "support": {
+                "forum": "https://discourse.roots.io/",
+                "issues": "https://github.com/roots/wp-password-bcrypt/issues",
+                "source": "https://github.com/roots/wp-password-bcrypt/tree/master"
+            },
             "time": "2016-03-01T16:27:06+00:00"
         },
         {
@@ -1193,16 +1440,16 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.22.0",
+            "version": "v1.23.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "c6c942b1ac76c82448322025e084cadc56048b4e"
+                "reference": "46cd95797e9df938fdd2b03693b5fca5e64b01ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/c6c942b1ac76c82448322025e084cadc56048b4e",
-                "reference": "c6c942b1ac76c82448322025e084cadc56048b4e",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/46cd95797e9df938fdd2b03693b5fca5e64b01ce",
+                "reference": "46cd95797e9df938fdd2b03693b5fca5e64b01ce",
                 "shasum": ""
             },
             "require": {
@@ -1214,7 +1461,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.22-dev"
+                    "dev-main": "1.23-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -1251,6 +1498,9 @@
                 "polyfill",
                 "portable"
             ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.23.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -1265,20 +1515,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-07T16:49:33+00:00"
+            "time": "2021-02-19T12:13:01+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.22.0",
+            "version": "v1.23.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "f377a3dd1fde44d37b9831d68dc8dea3ffd28e13"
+                "reference": "2df51500adbaebdc4c38dea4c89a2e131c45c8a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/f377a3dd1fde44d37b9831d68dc8dea3ffd28e13",
-                "reference": "f377a3dd1fde44d37b9831d68dc8dea3ffd28e13",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/2df51500adbaebdc4c38dea4c89a2e131c45c8a1",
+                "reference": "2df51500adbaebdc4c38dea4c89a2e131c45c8a1",
                 "shasum": ""
             },
             "require": {
@@ -1290,7 +1540,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.22-dev"
+                    "dev-main": "1.23-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -1328,6 +1578,9 @@
                 "portable",
                 "shim"
             ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.23.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -1342,20 +1595,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-07T16:49:33+00:00"
+            "time": "2021-05-27T09:27:20+00:00"
         },
         {
             "name": "symfony/polyfill-php80",
-            "version": "v1.22.0",
+            "version": "v1.23.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php80.git",
-                "reference": "dc3063ba22c2a1fd2f45ed856374d79114998f91"
+                "reference": "eca0bf41ed421bed1b57c4958bab16aa86b757d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/dc3063ba22c2a1fd2f45ed856374d79114998f91",
-                "reference": "dc3063ba22c2a1fd2f45ed856374d79114998f91",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/eca0bf41ed421bed1b57c4958bab16aa86b757d0",
+                "reference": "eca0bf41ed421bed1b57c4958bab16aa86b757d0",
                 "shasum": ""
             },
             "require": {
@@ -1364,7 +1617,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.22-dev"
+                    "dev-main": "1.23-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -1408,6 +1661,9 @@
                 "portable",
                 "shim"
             ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.23.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -1422,7 +1678,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-07T16:49:33+00:00"
+            "time": "2021-02-19T12:13:01+00:00"
         },
         {
             "name": "symfony/yaml",
@@ -1563,6 +1819,10 @@
                 "env",
                 "environment"
             ],
+            "support": {
+                "issues": "https://github.com/vlucas/phpdotenv/issues",
+                "source": "https://github.com/vlucas/phpdotenv/tree/v5.3.0"
+            },
             "funding": [
                 {
                     "url": "https://github.com/GrahamCampbell",
@@ -1574,6 +1834,24 @@
                 }
             ],
             "time": "2021-01-20T15:23:13+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/akismet",
+            "version": "4.1.10",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/akismet/",
+                "reference": "tags/4.1.10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/akismet.4.1.10.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/akismet/"
         },
         {
             "name": "wpackagist-plugin/better-search-replace",
@@ -1592,6 +1870,96 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/better-search-replace/"
+        },
+        {
+            "name": "wpackagist-plugin/bulk-block-converter",
+            "version": "1.0.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/bulk-block-converter/",
+                "reference": "tags/1.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/bulk-block-converter.1.0.1.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/bulk-block-converter/"
+        },
+        {
+            "name": "wpackagist-plugin/clickdesk-live-support-chat-plugin",
+            "version": "4.41",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/clickdesk-live-support-chat-plugin/",
+                "reference": "tags/4.41"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/clickdesk-live-support-chat-plugin.4.41.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/clickdesk-live-support-chat-plugin/"
+        },
+        {
+            "name": "wpackagist-plugin/cms-tree-page-view",
+            "version": "1.6.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/cms-tree-page-view/",
+                "reference": "tags/1.6.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/cms-tree-page-view.1.6.4.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/cms-tree-page-view/"
+        },
+        {
+            "name": "wpackagist-plugin/conditional-widgets",
+            "version": "3.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/conditional-widgets/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/conditional-widgets.zip?timestamp=1626114665"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/conditional-widgets/"
+        },
+        {
+            "name": "wpackagist-plugin/cookie-law-info",
+            "version": "2.0.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/cookie-law-info/",
+                "reference": "tags/2.0.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/cookie-law-info.2.0.4.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/cookie-law-info/"
         },
         {
             "name": "wpackagist-plugin/duplicate-post",
@@ -1630,6 +1998,114 @@
             "homepage": "https://wordpress.org/plugins/duracelltomi-google-tag-manager/"
         },
         {
+            "name": "wpackagist-plugin/easyazon",
+            "version": "4.1.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/easyazon/",
+                "reference": "tags/4.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/easyazon.4.1.1.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/easyazon/"
+        },
+        {
+            "name": "wpackagist-plugin/elementor",
+            "version": "3.3.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/elementor/",
+                "reference": "tags/3.3.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/elementor.3.3.0.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/elementor/"
+        },
+        {
+            "name": "wpackagist-plugin/feature-a-page-widget",
+            "version": "2.2.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/feature-a-page-widget/",
+                "reference": "tags/2.2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/feature-a-page-widget.2.2.0.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/feature-a-page-widget/"
+        },
+        {
+            "name": "wpackagist-plugin/featured-images-for-rss-feeds",
+            "version": "1.5.8",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/featured-images-for-rss-feeds/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/featured-images-for-rss-feeds.zip?timestamp=1616804616"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/featured-images-for-rss-feeds/"
+        },
+        {
+            "name": "wpackagist-plugin/goodbye-captcha",
+            "version": "3.1.43",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/goodbye-captcha/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/goodbye-captcha.zip?timestamp=1602646261"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/goodbye-captcha/"
+        },
+        {
+            "name": "wpackagist-plugin/gravityformscli",
+            "version": "1.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/gravityformscli/",
+                "reference": "tags/1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/gravityformscli.1.4.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/gravityformscli/"
+        },
+        {
             "name": "wpackagist-plugin/imagify",
             "version": "1.9.14",
             "source": {
@@ -1646,6 +2122,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/imagify/"
+        },
+        {
+            "name": "wpackagist-plugin/infusionsoft",
+            "version": "1.5.12",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/infusionsoft/",
+                "reference": "tags/1.5.12"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/infusionsoft.1.5.12.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/infusionsoft/"
         },
         {
             "name": "wpackagist-plugin/mailgun",
@@ -1684,22 +2178,40 @@
             "homepage": "https://wordpress.org/plugins/mainwp-child/"
         },
         {
-            "name": "wpackagist-plugin/official-facebook-pixel",
-            "version": "3.0.5",
+            "name": "wpackagist-plugin/nitropack",
+            "version": "1.5.4",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/official-facebook-pixel/",
-                "reference": "tags/3.0.5"
+                "url": "https://plugins.svn.wordpress.org/nitropack/",
+                "reference": "tags/1.5.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/official-facebook-pixel.3.0.5.zip"
+                "url": "https://downloads.wordpress.org/plugin/nitropack.1.5.4.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/official-facebook-pixel/"
+            "homepage": "https://wordpress.org/plugins/nitropack/"
+        },
+        {
+            "name": "wpackagist-plugin/optinmonster",
+            "version": "2.4.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/optinmonster/",
+                "reference": "tags/2.4.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/optinmonster.2.4.1.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/optinmonster/"
         },
         {
             "name": "wpackagist-plugin/post-type-switcher",
@@ -1720,22 +2232,22 @@
             "homepage": "https://wordpress.org/plugins/post-type-switcher/"
         },
         {
-            "name": "wpackagist-plugin/query-monitor",
-            "version": "3.7.1",
+            "name": "wpackagist-plugin/recent-posts-widget-extended",
+            "version": "1.0.0",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/query-monitor/",
-                "reference": "tags/3.7.1"
+                "url": "https://plugins.svn.wordpress.org/recent-posts-widget-extended/",
+                "reference": "tags/1.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.7.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/recent-posts-widget-extended.1.0.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/query-monitor/"
+            "homepage": "https://wordpress.org/plugins/recent-posts-widget-extended/"
         },
         {
             "name": "wpackagist-plugin/regenerate-thumbnails",
@@ -1756,58 +2268,112 @@
             "homepage": "https://wordpress.org/plugins/regenerate-thumbnails/"
         },
         {
-            "name": "wpackagist-plugin/simple-page-ordering",
-            "version": "2.3.4",
+            "name": "wpackagist-plugin/remove-nofollow",
+            "version": "1.00",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/simple-page-ordering/",
-                "reference": "tags/2.3.4"
+                "url": "https://plugins.svn.wordpress.org/remove-nofollow/",
+                "reference": "tags/1.00"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/simple-page-ordering.2.3.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/remove-nofollow.1.00.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/simple-page-ordering/"
+            "homepage": "https://wordpress.org/plugins/remove-nofollow/"
         },
         {
-            "name": "wpackagist-plugin/simple-sitemap",
-            "version": "3.5.2",
+            "name": "wpackagist-plugin/social-networks-auto-poster-facebook-twitter-g",
+            "version": "4.3.20",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/simple-sitemap/",
-                "reference": "tags/3.5.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/simple-sitemap.3.5.2.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/simple-sitemap/"
-        },
-        {
-            "name": "wpackagist-plugin/wp-term-order",
-            "version": "1.0.0",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/wp-term-order/",
+                "url": "https://plugins.svn.wordpress.org/social-networks-auto-poster-facebook-twitter-g/",
                 "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-term-order.zip?timestamp=1596127378"
+                "url": "https://downloads.wordpress.org/plugin/social-networks-auto-poster-facebook-twitter-g.zip?timestamp=1612563223"
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wp-term-order/"
+            "homepage": "https://wordpress.org/plugins/social-networks-auto-poster-facebook-twitter-g/"
+        },
+        {
+            "name": "wpackagist-plugin/unbounce",
+            "version": "1.0.47",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/unbounce/",
+                "reference": "tags/1.0.47"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/unbounce.1.0.47.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/unbounce/"
+        },
+        {
+            "name": "wpackagist-plugin/what-template-file-am-i-viewing",
+            "version": "1.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/what-template-file-am-i-viewing/",
+                "reference": "tags/1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/what-template-file-am-i-viewing.1.2.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/what-template-file-am-i-viewing/"
+        },
+        {
+            "name": "wpackagist-plugin/wordpress-popular-posts",
+            "version": "5.3.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wordpress-popular-posts/",
+                "reference": "tags/5.3.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-popular-posts.5.3.5.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wordpress-popular-posts/"
+        },
+        {
+            "name": "wpackagist-plugin/wordpress-seo",
+            "version": "16.7",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
+                "reference": "tags/16.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.16.7.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wordpress-seo/"
         },
         {
             "name": "wpackagist-plugin/wp-time-capsule",
@@ -1889,18 +2455,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "62148111d4ef79d664b0da42729ce5e0705ad4aa"
+                "reference": "fc5e5d772af47d035df8178172391259b6e30566"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/62148111d4ef79d664b0da42729ce5e0705ad4aa",
-                "reference": "62148111d4ef79d664b0da42729ce5e0705ad4aa",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/fc5e5d772af47d035df8178172391259b6e30566",
+                "reference": "fc5e5d772af47d035df8178172391259b6e30566",
                 "shasum": ""
             },
             "conflict": {
                 "3f/pygmentize": "<1.2",
                 "adodb/adodb-php": "<5.20.12",
                 "alterphp/easyadmin-extension-bundle": ">=1.2,<1.2.11|>=1.3,<1.3.1",
+                "amazing/media2click": ">=1,<1.3.3",
                 "amphp/artax": "<1.0.6|>=2,<2.0.6",
                 "amphp/http": "<1.0.1",
                 "amphp/http-client": ">=4,<4.4",
@@ -1910,7 +2477,7 @@
                 "bagisto/bagisto": "<0.1.5",
                 "barrelstrength/sprout-base-email": "<1.2.7",
                 "barrelstrength/sprout-forms": "<3.9",
-                "baserproject/basercms": ">=4,<=4.3.6|>=4.4,<4.4.1",
+                "baserproject/basercms": "<4.4.5",
                 "bk2k/bootstrap-package": ">=7.1,<7.1.2|>=8,<8.0.8|>=9,<9.0.4|>=9.1,<9.1.3|>=10,<10.0.10|>=11,<11.0.3",
                 "bolt/bolt": "<3.7.2",
                 "bolt/core": "<4.1.13",
@@ -1920,17 +2487,20 @@
                 "cakephp/cakephp": ">=1.3,<1.3.18|>=2,<2.4.99|>=2.5,<2.5.99|>=2.6,<2.6.12|>=2.7,<2.7.6|>=3,<3.5.18|>=3.6,<3.6.15|>=3.7,<3.7.7",
                 "cart2quote/module-quotation": ">=4.1.6,<=4.4.5|>=5,<5.4.4",
                 "cartalyst/sentry": "<=2.1.6",
-                "centreon/centreon": "<18.10.8|>=19,<19.4.5",
+                "centreon/centreon": "<20.10.7",
                 "cesnet/simplesamlphp-module-proxystatistics": "<3.1",
                 "codeigniter/framework": "<=3.0.6",
                 "composer/composer": "<1.10.22|>=2-alpha.1,<2.0.13",
                 "contao-components/mediaelement": ">=2.14.2,<2.21.1",
                 "contao/core": ">=2,<3.5.39",
-                "contao/core-bundle": ">=4,<4.4.52|>=4.5,<4.9.6|= 4.10.0",
+                "contao/core-bundle": ">=4,<4.4.52|>=4.5,<4.9.16|>=4.10,<4.11.5|= 4.10.0",
                 "contao/listing-bundle": ">=4,<4.4.8",
+                "craftcms/cms": "<3.6.7",
+                "croogo/croogo": "<3.0.7",
                 "datadog/dd-trace": ">=0.30,<0.30.2",
                 "david-garcia/phpwhois": "<=4.3.1",
                 "derhansen/sf_event_mgt": "<4.3.1|>=5,<5.1.1",
+                "directmailteam/direct-mail": "<5.2.4",
                 "doctrine/annotations": ">=1,<1.2.7",
                 "doctrine/cache": ">=1,<1.3.2|>=1.4,<1.4.2",
                 "doctrine/common": ">=2,<2.4.3|>=2.5,<2.5.1",
@@ -1948,6 +2518,7 @@
                 "endroid/qr-code-bundle": "<3.4.2",
                 "enshrined/svg-sanitize": "<0.13.1",
                 "erusev/parsedown": "<1.7.2",
+                "ether/logs": "<3.0.4",
                 "ezsystems/demobundle": ">=5.4,<5.4.6.1",
                 "ezsystems/ez-support-tools": ">=2.2,<2.2.3",
                 "ezsystems/ezdemo-ls-extension": ">=5.4,<5.4.2.1",
@@ -1964,7 +2535,9 @@
                 "ezsystems/repository-forms": ">=2.3,<2.3.2.1",
                 "ezyang/htmlpurifier": "<4.1.1",
                 "facade/ignition": "<1.16.14|>=2,<2.4.2|>=2.5,<2.5.2",
+                "feehi/cms": "<=2.1.1",
                 "firebase/php-jwt": "<2",
+                "flarum/core": ">=1,<=1.0.1",
                 "flarum/sticky": ">=0.1-beta.14,<=0.1-beta.15",
                 "flarum/tags": "<=0.1-beta.13",
                 "fluidtypo3/vhs": "<5.1.1",
@@ -1977,8 +2550,8 @@
                 "friendsofsymfony/user-bundle": ">=1.2,<1.3.5",
                 "friendsoftypo3/mediace": ">=7.6.2,<7.6.5",
                 "fuel/core": "<1.8.1",
-                "getgrav/grav": "<1.7.11",
-                "getkirby/cms": "<3.5.4",
+                "getgrav/grav": "<=1.7.10",
+                "getkirby/cms": "<=3.5.6",
                 "getkirby/panel": "<2.5.14",
                 "gos/web-socket-bundle": "<1.10.4|>=2,<2.6.1|>=3,<3.3",
                 "gree/jose": "<=2.2",
@@ -1990,6 +2563,7 @@
                 "illuminate/encryption": ">=4,<=4.0.11|>=4.1,<=4.1.31|>=4.2,<=4.2.22|>=5,<=5.0.35|>=5.1,<=5.1.46|>=5.2,<=5.2.45|>=5.3,<=5.3.31|>=5.4,<=5.4.36|>=5.5,<5.5.40|>=5.6,<5.6.15",
                 "illuminate/view": ">=7,<7.1.2",
                 "impresscms/impresscms": "<=1.4.2",
+                "intelliants/subrion": "<=4.2.1",
                 "ivankristianto/phpwhois": "<=4.3",
                 "james-heinrich/getid3": "<1.9.9",
                 "joomla/archive": "<1.1.10",
@@ -1997,11 +2571,14 @@
                 "jsmitty12/phpwhois": "<5.1",
                 "kazist/phpwhois": "<=4.2.6",
                 "kitodo/presentation": "<3.1.2",
+                "klaviyo/magento2-extension": ">=1,<3",
                 "kreait/firebase-php": ">=3.2,<3.8.1",
                 "la-haute-societe/tcpdf": "<6.2.22",
+                "laminas/laminas-http": "<2.14.2",
                 "laravel/framework": "<6.20.26|>=7,<8.40",
                 "laravel/socialite": ">=1,<1.0.99|>=2,<2.0.10",
                 "league/commonmark": "<0.18.3",
+                "league/flysystem": "<1.1.4|>=2,<2.1.1",
                 "lexik/jwt-authentication-bundle": "<2.10.7|>=2.11,<2.11.3",
                 "librenms/librenms": "<21.1",
                 "livewire/livewire": ">2.2.4,<2.2.6",
@@ -2017,10 +2594,12 @@
                 "moodle/moodle": "<3.5.17|>=3.7,<3.7.9|>=3.8,<3.8.8|>=3.9,<3.9.5|>=3.10,<3.10.2",
                 "namshi/jose": "<2.2",
                 "neos/flow": ">=1,<1.0.4|>=1.1,<1.1.1|>=2,<2.0.1|>=2.3,<2.3.16|>=3,<3.0.12|>=3.1,<3.1.10|>=3.2,<3.2.13|>=3.3,<3.3.13|>=4,<4.0.6",
+                "neos/form": ">=1.2,<4.3.3|>=5,<5.0.9|>=5.1,<5.1.3",
                 "neos/neos": ">=1.1,<1.1.3|>=1.2,<1.2.13|>=2,<2.0.4|>=2.3,<2.9.99|>=3,<3.0.20|>=3.1,<3.1.18|>=3.2,<3.2.14|>=3.3,<3.3.23|>=4,<4.0.17|>=4.1,<4.1.16|>=4.2,<4.2.12|>=4.3,<4.3.3",
                 "neos/swiftmailer": ">=4.1,<4.1.99|>=5.4,<5.4.5",
                 "nette/application": ">=2,<2.0.19|>=2.1,<2.1.13|>=2.2,<2.2.10|>=2.3,<2.3.14|>=2.4,<2.4.16|>=3,<3.0.6",
                 "nette/nette": ">=2,<2.0.19|>=2.1,<2.1.13",
+                "nukeviet/nukeviet": "<4.3.4",
                 "nystudio107/craft-seomatic": "<3.3",
                 "nzo/url-encryptor-bundle": ">=4,<4.3.2|>=5,<5.0.1",
                 "october/backend": "<1.1.2",
@@ -2037,13 +2616,15 @@
                 "oro/platform": ">=1.7,<1.7.4",
                 "padraic/humbug_get_contents": "<1.1.2",
                 "pagarme/pagarme-php": ">=0,<3",
+                "pagekit/pagekit": "<=1.0.18",
                 "paragonie/random_compat": "<2",
                 "passbolt/passbolt_api": "<2.11",
                 "paypal/merchant-sdk-php": "<3.12",
                 "pear/archive_tar": "<1.4.12",
                 "personnummer/personnummer": "<3.0.2",
+                "phanan/koel": "<5.1.4",
                 "phpfastcache/phpfastcache": ">=5,<5.0.13",
-                "phpmailer/phpmailer": "<6.1.6|>=6.1.8,<6.4.1",
+                "phpmailer/phpmailer": "<6.5",
                 "phpmussel/phpmussel": ">=1,<1.6",
                 "phpmyadmin/phpmyadmin": "<4.9.6|>=5,<5.0.3",
                 "phpoffice/phpexcel": "<1.8.2",
@@ -2052,7 +2633,7 @@
                 "phpunit/phpunit": ">=4.8.19,<4.8.28|>=5.0.10,<5.6.3",
                 "phpwhois/phpwhois": "<=4.2.5",
                 "phpxmlrpc/extras": "<0.6.1",
-                "pimcore/pimcore": "<6.8.8",
+                "pimcore/pimcore": "<10.0.7",
                 "pocketmine/pocketmine-mp": "<3.15.4",
                 "pressbooks/pressbooks": "<5.18",
                 "prestashop/autoupgrade": ">=4,<4.10.1",
@@ -2075,17 +2656,17 @@
                 "scheb/two-factor-bundle": ">=0,<3.26|>=4,<4.11",
                 "sensiolabs/connect": "<4.2.3",
                 "serluck/phpwhois": "<=4.2.6",
-                "shopware/core": "<=6.3.5.2",
-                "shopware/platform": "<=6.3.5.2",
+                "shopware/core": "<=6.4.1",
+                "shopware/platform": "<=6.4.1",
                 "shopware/production": "<=6.3.5.2",
-                "shopware/shopware": "<5.6.9",
+                "shopware/shopware": "<=5.6.9",
                 "silverstripe/admin": ">=1.0.3,<1.0.4|>=1.1,<1.1.1",
                 "silverstripe/assets": ">=1,<1.4.7|>=1.5,<1.5.2",
                 "silverstripe/cms": "<4.3.6|>=4.4,<4.4.4",
                 "silverstripe/comments": ">=1.3,<1.9.99|>=2,<2.9.99|>=3,<3.1.1",
                 "silverstripe/forum": "<=0.6.1|>=0.7,<=0.7.3",
-                "silverstripe/framework": "<4.4.7|>=4.5,<4.5.4",
-                "silverstripe/graphql": ">=2,<2.0.5|>=3,<3.1.2|>=3.2,<3.2.4",
+                "silverstripe/framework": "<4.7.4",
+                "silverstripe/graphql": "<=3.5|>=4-alpha.1,<4-alpha.2",
                 "silverstripe/registry": ">=2.1,<2.1.2|>=2.2,<2.2.1",
                 "silverstripe/restfulserver": ">=1,<1.0.9|>=2,<2.0.4",
                 "silverstripe/subsites": ">=2,<2.1.1",
@@ -2104,14 +2685,14 @@
                 "squizlabs/php_codesniffer": ">=1,<2.8.1|>=3,<3.0.1",
                 "ssddanbrown/bookstack": "<0.29.2",
                 "stormpath/sdk": ">=0,<9.9.99",
-                "studio-42/elfinder": "<2.1.49",
-                "sulu/sulu": "<1.6.34|>=2,<2.0.10|>=2.1,<2.1.1",
+                "studio-42/elfinder": "<2.1.59",
+                "sulu/sulu": "<1.6.41|>=2,<2.0.10|>=2.1,<2.1.1",
                 "swiftmailer/swiftmailer": ">=4,<5.4.5",
                 "sylius/admin-bundle": ">=1,<1.0.17|>=1.1,<1.1.9|>=1.2,<1.2.2",
                 "sylius/grid": ">=1,<1.1.19|>=1.2,<1.2.18|>=1.3,<1.3.13|>=1.4,<1.4.5|>=1.5,<1.5.1",
                 "sylius/grid-bundle": ">=1,<1.1.19|>=1.2,<1.2.18|>=1.3,<1.3.13|>=1.4,<1.4.5|>=1.5,<1.5.1",
                 "sylius/resource-bundle": "<1.3.14|>=1.4,<1.4.7|>=1.5,<1.5.2|>=1.6,<1.6.4",
-                "sylius/sylius": "<1.6.9|>=1.7,<1.7.9|>=1.8,<1.8.3",
+                "sylius/sylius": "<1.6.9|>=1.7,<1.7.9|>=1.8,<1.8.3|>=1.9,<1.9.5",
                 "symbiote/silverstripe-multivaluefield": ">=3,<3.0.99",
                 "symbiote/silverstripe-queuedjobs": ">=3,<3.0.2|>=3.1,<3.1.4|>=4,<4.0.7|>=4.1,<4.1.2|>=4.2,<4.2.4|>=4.3,<4.3.3|>=4.4,<4.4.3|>=4.5,<4.5.1|>=4.6,<4.6.4",
                 "symbiote/silverstripe-versionedfiles": "<=2.0.3",
@@ -2135,20 +2716,22 @@
                 "symfony/security-core": ">=2.4,<2.6.13|>=2.7,<2.7.9|>=2.7.30,<2.7.32|>=2.8,<3.4.49|>=4,<4.4.24|>=5,<5.2.9",
                 "symfony/security-csrf": ">=2.4,<2.7.48|>=2.8,<2.8.41|>=3,<3.3.17|>=3.4,<3.4.11|>=4,<4.0.11",
                 "symfony/security-guard": ">=2.8,<3.4.48|>=4,<4.4.23|>=5,<5.2.8",
-                "symfony/security-http": ">=2.3,<2.3.41|>=2.4,<2.7.51|>=2.8,<3.4.48|>=4,<4.4.23|>=5,<5.2.8",
+                "symfony/security-http": ">=2.3,<2.3.41|>=2.4,<2.7.51|>=2.8,<3.4.48|>=4,<4.4.23|>=5,<5.2.8|>=5.3,<5.3.2",
                 "symfony/serializer": ">=2,<2.0.11",
-                "symfony/symfony": ">=2,<3.4.49|>=4,<4.4.24|>=5,<5.2.9",
+                "symfony/symfony": ">=2,<3.4.49|>=4,<4.4.24|>=5,<5.2.9|>=5.3,<5.3.2",
                 "symfony/translation": ">=2,<2.0.17",
                 "symfony/validator": ">=2,<2.0.24|>=2.1,<2.1.12|>=2.2,<2.2.5|>=2.3,<2.3.3",
                 "symfony/var-exporter": ">=4.2,<4.2.12|>=4.3,<4.3.8",
                 "symfony/web-profiler-bundle": ">=2,<2.3.19|>=2.4,<2.4.9|>=2.5,<2.5.4",
                 "symfony/yaml": ">=2,<2.0.22|>=2.1,<2.1.7",
+                "t3/dce": ">=2.2,<2.6.2",
                 "t3g/svg-sanitizer": "<1.0.3",
                 "tecnickcom/tcpdf": "<6.2.22",
                 "thelia/backoffice-default-template": ">=2.1,<2.1.2",
                 "thelia/thelia": ">=2.1-beta.1,<2.1.3",
                 "theonedemon/phpwhois": "<=4.2.5",
                 "titon/framework": ">=0,<9.9.99",
+                "tribalsystems/zenario": "<8.8.53370",
                 "truckersmp/phpwhois": "<=4.3.1",
                 "twig/twig": "<1.38|>=2,<2.7",
                 "typo3/cms": ">=6.2,<6.2.30|>=7,<7.6.32|>=8,<8.7.38|>=9,<9.5.25|>=10,<10.4.14|>=11,<11.1.1",
@@ -2168,6 +2751,7 @@
                 "wikimedia/parsoid": "<0.12.2",
                 "willdurand/js-translation-bundle": "<2.1.1",
                 "wp-cli/wp-cli": "<2.5",
+                "yidashi/yii2cmf": "<=2",
                 "yii2mod/yii2-cms": "<1.9.2",
                 "yiisoft/yii": ">=1.1.14,<1.1.15",
                 "yiisoft/yii2": "<2.0.38",
@@ -2177,6 +2761,7 @@
                 "yiisoft/yii2-gii": "<2.0.4",
                 "yiisoft/yii2-jui": "<2.0.4",
                 "yiisoft/yii2-redis": "<2.0.8",
+                "yoast-seo-for-typo3/yoast_seo": "<7.2.1",
                 "yourls/yourls": "<1.7.4",
                 "zendesk/zendesk_api_client_php": "<2.2.11",
                 "zendframework/zend-cache": ">=2.4,<2.4.8|>=2.5,<2.5.3",
@@ -2196,7 +2781,7 @@
                 "zendframework/zend-validator": ">=2.3,<2.3.6",
                 "zendframework/zend-view": ">=2,<2.2.7|>=2.3,<2.3.1",
                 "zendframework/zend-xmlrpc": ">=2.1,<2.1.6|>=2.2,<2.2.6",
-                "zendframework/zendframework": "<2.5.1",
+                "zendframework/zendframework": "<=3",
                 "zendframework/zendframework1": "<1.12.20",
                 "zendframework/zendopenid": ">=2,<2.0.2",
                 "zendframework/zendxml": ">=1,<1.0.1",
@@ -2224,6 +2809,10 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
+            "support": {
+                "issues": "https://github.com/Roave/SecurityAdvisories/issues",
+                "source": "https://github.com/Roave/SecurityAdvisories/tree/latest"
+            },
             "funding": [
                 {
                     "url": "https://github.com/Ocramius",
@@ -2234,7 +2823,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-19T23:05:50+00:00"
+            "time": "2021-07-13T18:03:10+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
@@ -2285,6 +2874,11 @@
                 "phpcs",
                 "standards"
             ],
+            "support": {
+                "issues": "https://github.com/squizlabs/PHP_CodeSniffer/issues",
+                "source": "https://github.com/squizlabs/PHP_CodeSniffer",
+                "wiki": "https://github.com/squizlabs/PHP_CodeSniffer/wiki"
+            },
             "time": "2021-04-09T00:54:41+00:00"
         }
     ],
