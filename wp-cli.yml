@@ -3,6 +3,6 @@ server:
   docroot: web
 
 @staging:
-  ssh: forge@123.456.789.10:/home/forge/www.staging.url/web
+  ssh: forge@142.93.92.99:/home/forge/staging.peaceofmindtaxhelp.com/web
 @production:
-  ssh: forge@987.654.432.10:/home/forge/www.production.url/web
+  ssh: forge@165.227.5.89:/home/forge/peaceofmindtaxhelp.com/web
