@@ -3,9 +3,9 @@
 @section('content')
 
 @if (! have_posts())
-@alert(['type' => 'warning'])
+@component('components.alert', ['type' => 'warning'])
 {{ __('Sorry, no results were found.', 'sage') }}
-@endalert
+@endcomponent
 
 {!! get_search_form(false) !!}
 @endif
