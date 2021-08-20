@@ -33,3 +33,4 @@ wp-cli.local.yml
 /web/imagify-backup
 /web/conf
 
+/web/app/nitropack
