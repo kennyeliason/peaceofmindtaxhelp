@@ -8,6 +8,7 @@ development:
     - mainwp-child/mainwp-child.php
     - ithemes-security-pro/ithemes-security-pro.php
     - pixel-caffeine/pixel-caffeine.php
+    - nitropack/main.php
   enable:
     - better-search-replace/better-search-replace.php
     - yoast-test-helper/yoast-test-helper.php
