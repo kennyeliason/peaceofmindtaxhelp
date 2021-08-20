@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ac0281b3114297945d4ec791bad8ced9",
+    "content-hash": "359318f15bfd7fdff338d312c157bf01",
     "packages": [
         {
             "name": "composer/installers",
@@ -1999,15 +1999,15 @@
         },
         {
             "name": "wpackagist-plugin/easyazon",
-            "version": "4.1.1",
+            "version": "4.1.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/easyazon/",
-                "reference": "tags/4.1.1"
+                "reference": "tags/4.1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/easyazon.4.1.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/easyazon.4.1.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
