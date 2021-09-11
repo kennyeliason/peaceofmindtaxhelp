@@ -32,5 +32,6 @@ wp-cli.local.yml
 /web/app/advanced-cache.php
 /web/imagify-backup
 /web/conf
+/web/app/nitropack
 
 /web/app/nitropack
