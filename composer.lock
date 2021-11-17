@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "359318f15bfd7fdff338d312c157bf01",
+    "content-hash": "30e955f3c5c64d55d5aa5f8bedec2a02",
     "packages": [
         {
             "name": "composer/installers",
@@ -449,11 +449,11 @@
         },
         {
             "name": "neonbrand/gravityformsmailchimp",
-            "version": "4.9",
+            "version": "5.0",
             "dist": {
                 "type": "zip",
-                "url": "https://mainwp.neonbrand.com/satispress/gravityformsmailchimp/4.9",
-                "shasum": "260dd3c39be75b2c1a848fb1054281bf73c73da3"
+                "url": "https://mainwp.neonbrand.com/satispress/gravityformsmailchimp/5.0",
+                "shasum": "64659626a735bc1d549e3414b7cd0232b12b88a1"
             },
             "require": {
                 "composer/installers": "^1.0"
@@ -525,11 +525,11 @@
         },
         {
             "name": "neonbrand/media-file-renamer-pro",
-            "version": "5.3.2",
+            "version": "5.3.3",
             "dist": {
                 "type": "zip",
-                "url": "https://mainwp.neonbrand.com/satispress/media-file-renamer-pro/5.3.2",
-                "shasum": "342db7abfa1129d292963a547f818c56f0a7d779"
+                "url": "https://mainwp.neonbrand.com/satispress/media-file-renamer-pro/5.3.3",
+                "shasum": "cbc82558fbebc90ef99c9f7143b315fed06b521d"
             },
             "require": {
                 "composer/installers": "^1.0"
@@ -772,11 +772,11 @@
         },
         {
             "name": "neonbrand/wordpress-seo-premium",
-            "version": "16.9",
+            "version": "17.6",
             "dist": {
                 "type": "zip",
-                "url": "https://mainwp.neonbrand.com/satispress/wordpress-seo-premium/16.9",
-                "shasum": "61cd4f4c08093ed0d9c3c43c6ed859eba2f56bed"
+                "url": "https://mainwp.neonbrand.com/satispress/wordpress-seo-premium/17.6",
+                "shasum": "a5fba9b636de3e3987a1a5592bf190be46152ccd"
             },
             "require": {
                 "composer/installers": "^1.0"
@@ -1996,15 +1996,15 @@
         },
         {
             "name": "wpackagist-plugin/easyazon",
-            "version": "4.1.2",
+            "version": "5.0.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/easyazon/",
-                "reference": "tags/4.1.2"
+                "reference": "tags/5.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/easyazon.4.1.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/easyazon.5.0.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -2356,15 +2356,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "16.9",
+            "version": "17.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/16.9"
+                "reference": "tags/17.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.16.9.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.17.6.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
