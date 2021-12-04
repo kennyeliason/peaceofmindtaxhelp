@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a5fde57bd5d0a094263843814e28e23f",
+    "content-hash": "5fdeb99ef4068854105a21948b2fb9de",
     "packages": [
         {
             "name": "composer/installers",
@@ -411,11 +411,11 @@
         },
         {
             "name": "neonbrand/google-analytics-premium",
-            "version": "8.1.0",
+            "version": "8.2.0",
             "dist": {
                 "type": "zip",
-                "url": "https://mainwp.neonbrand.com/satispress/google-analytics-premium/8.1.0",
-                "shasum": "d60d7fb2a0efe8155d8fce84cc4dbbbdf35478ba"
+                "url": "https://mainwp.neonbrand.com/satispress/google-analytics-premium/8.2.0",
+                "shasum": "f29c36a34e18f8b1fce54adff623fcbbb1a44fd2"
             },
             "require": {
                 "composer/installers": "^1.0"
@@ -582,11 +582,11 @@
         },
         {
             "name": "neonbrand/monsterinsights-forms",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "dist": {
                 "type": "zip",
-                "url": "https://mainwp.neonbrand.com/satispress/monsterinsights-forms/2.0.0",
-                "shasum": "9ed7bed8782cbfdbb6a003c1520acfbdbe1f4b1e"
+                "url": "https://mainwp.neonbrand.com/satispress/monsterinsights-forms/2.1.0",
+                "shasum": "dbbefa1d77cb7f7f26f397bb19ee2d655dc956c5"
             },
             "require": {
                 "composer/installers": "^1.0"
