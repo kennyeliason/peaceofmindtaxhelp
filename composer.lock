@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8d8438df395036293cab928e1e470dc6",
+    "content-hash": "a5fde57bd5d0a094263843814e28e23f",
     "packages": [
         {
             "name": "composer/installers",
@@ -772,11 +772,11 @@
         },
         {
             "name": "neonbrand/wordpress-seo-premium",
-            "version": "17.6",
+            "version": "17.7",
             "dist": {
                 "type": "zip",
-                "url": "https://mainwp.neonbrand.com/satispress/wordpress-seo-premium/17.6",
-                "shasum": "a5fba9b636de3e3987a1a5592bf190be46152ccd"
+                "url": "https://mainwp.neonbrand.com/satispress/wordpress-seo-premium/17.7",
+                "shasum": "10e93b2727d425965df543f8e29c70ee9a841b1f"
             },
             "require": {
                 "composer/installers": "^1.0"
@@ -810,11 +810,11 @@
         },
         {
             "name": "neonbrand/wpseo-local",
-            "version": "13.9",
+            "version": "14.2",
             "dist": {
                 "type": "zip",
-                "url": "https://mainwp.neonbrand.com/satispress/wpseo-local/13.9",
-                "shasum": "0ddce401739b5ebc15081f82bfd0237d1dc53289"
+                "url": "https://mainwp.neonbrand.com/satispress/wpseo-local/14.2",
+                "shasum": "afac0b1660edcdb47b7e43f74929271fd16b5cd8"
             },
             "require": {
                 "composer/installers": "^1.0"
@@ -829,11 +829,11 @@
         },
         {
             "name": "neonbrand/wpseo-news",
-            "version": "12.9",
+            "version": "13.1",
             "dist": {
                 "type": "zip",
-                "url": "https://mainwp.neonbrand.com/satispress/wpseo-news/12.9",
-                "shasum": "5310e6ed94d39a977dded06a269aae9f7ff0a870"
+                "url": "https://mainwp.neonbrand.com/satispress/wpseo-news/13.1",
+                "shasum": "67834ee205735cbeb9fb78d954a0e51beae2e326"
             },
             "require": {
                 "composer/installers": "^1.0"
@@ -2356,15 +2356,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "17.6",
+            "version": "17.7.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/17.6"
+                "reference": "tags/17.7.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.17.6.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.17.7.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
