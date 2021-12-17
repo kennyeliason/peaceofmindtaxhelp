@@ -3,11 +3,6 @@
 $socials = get_field('socials','options');
 @endphp
 <footer class="bg-brand-700">
-    <!-- ClickDesk Live Chat Service for websites -->
-<script type='text/javascript'>
-var _glc =_glc || []; _glc.push('all_ag9zfmNsaWNrZGVza2NoYXRyDgsSBXVzZXJzGICw4BIM'); var glcpath = (('https:' == document.location.protocol) ? 'https://my.clickdesk.com/clickdesk-ui/browser/' : 'http://my.clickdesk.com/clickdesk-ui/browser/'); var glcp = (('https:' == document.location.protocol) ? 'https://' : 'http://'); var glcspt = document.createElement('script'); glcspt.type = 'text/javascript'; glcspt.async = true; glcspt.src = glcpath + 'livechat-cloud-new.js'; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(glcspt, s);
-</script>
-<!-- End of ClickDesk -->
     <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <div class="grid grid-cols-2 xl:grid-cols-4 gap-4 xl:gap-8">
             <div class="col-span-2 md:col-span-1">
