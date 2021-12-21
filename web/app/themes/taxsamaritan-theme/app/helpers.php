@@ -147,17 +147,3 @@ function wrap_part($string, $wrap_start = '<span class="font-bold">', $wrap_fini
     $string = substr_replace($string, $wrap_finish, $end_pos, 0);
     return $string;
 }
-
-if(class_exists('WPSEO_Options')){
-    add_filter( 'wpseo_sitemap_index', 'App\\add_sitemap_custom_items' );
-
-    function add_sitemap_custom_items( $sitemap_custom_items ) {
-        $sitemap_custom_items .= '
-        <sitemap>
-        <loc>https://www.taxsamaritan.com/taxsamaritan-custom-pages.xml</loc>
-        <lastmod>2021-03-29 07:07 +00:00</lastmod>
-        </sitemap>';
-
-        return $sitemap_custom_items;
-    }
-}

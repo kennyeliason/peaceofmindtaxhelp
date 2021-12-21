@@ -5,7 +5,7 @@ $socials = get_field('socials','options');
 <footer class="bg-brand-700">
     <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <div class="grid grid-cols-2 xl:grid-cols-4 gap-4 xl:gap-8">
-            <div class="col-span-2 md:col-span-1">
+            <div class="col-span-2 md:col-span-1 text-white">
                 @php(dynamic_sidebar('footer-1'))
                 <div class="flex justify-start md:order-2 mt-4">
                     @foreach($socials as $social)
