@@ -47,7 +47,7 @@
         "composer/installers": "^1.8",
         "vlucas/phpdotenv": "^5.3",
         "oscarotero/env": "^2.1",
-        "roots/wordpress": "^5.7",
+        "roots/wordpress": "^5.8",
         "roots/wp-config": "1.0.0",
         "roots/wp-password-bcrypt": "1.0.0",
         "primetime/wp-plugin-activation-manifest": "^1.0",
@@ -122,7 +122,11 @@
     },
     "config": {
         "optimize-autoloader": true,
-        "preferred-install": "dist"
+        "preferred-install": "dist",
+        "allow-plugins": {
+            "composer/installers": true,
+            "roots/wordpress-core-installer": true
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
